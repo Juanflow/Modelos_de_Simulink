@@ -4,26 +4,31 @@ Es un entorno de diagramas de bloque que modela, simula y analiza los sistemas d
 - Se necesita la instalación de un Add-on en Matlab pulsando en "Get Hardware Suport Packages", donde se obtendrán paquetes para Arduino desde internet. 
 Para que se instalen correctamente los drivers se necesitara acceder con el modo administrador.
 3)¿Cómo se tendrá que configurar Simulink pera trabajar con la placa Arduino Mega 2560?
--Para la configuración especifica de Simulink para funcionar con el Arduino, tenemos que ir a "MODELING", pulsar "Model Settings" e ir finalmente a "Hardware Implementation y seleccionar nuestro Arduino.
+-Para la configuración especifica de Simulink para funcionar con el Arduino, tenemos que ir a "MODELING", pulsar "Model Settings" e ir finalmente a 
+"Hardware Implementation y seleccionar nuestro Arduino.
 4)¿Qué modos de ejecución hay?
-Podemos ejecutar nuestro modelo a través de una simulación en nuestro PC o con nuestro hardware con el modo “Connect to” el cual ejecuta el modelo en el PC y lo lleva al hardware, 
+Podemos ejecutar nuestro modelo a través de una simulación en nuestro PC o con nuestro hardware con el modo “Connect to” el cual ejecuta el modelo 
+en el PC y lo lleva al hardware, 
 o “external” el modelo se lleva primeramente al hardware y allí se ejecuta.
 5)¿Qué librerías nos proporciona el paquete de Simulink específico del Arduino Mega 2560?
--Con todo instalado podremos usar diferentes bibliotecas con bloques especializados en motores, en sensores o en conversión de datos byte, pero se usa principalmente la biblioteca COMMON, 
+-Con todo instalado podremos usar diferentes bibliotecas con bloques especializados en motores, en sensores o en conversión de datos byte, 
+pero se usa principalmente la biblioteca COMMON, 
 que proporciona bloques relacionados con los componentes de la placa.
 6)¿Qué bloques hay en la librería COMMON que son útiles? 
--La biblioteca principal COMMON nos presta distintos tipos de entradas y salidas ya sean digitales o analógicas junto con transmisores, interruptores externos o lectores.
+-La biblioteca principal COMMON nos presta distintos tipos de entradas y salidas ya sean digitales o analógicas junto con transmisores, 
+interruptores externos o lectores.
 7)¿De qué tipo de señal serán los bloques necesarios para trabajar con potenciómetros?
 -Para leer el potenciómetro del Arduino serán necesario usar bloques de inputs o outputs analógicas.
 8)¿De qué tipo de señal serán los bloques necesarios para trabajar con LEDs?
 -Para representar los LEDs del Arduino se usarán bloques de outputs digitales.
 9)Además de los bloques de las librerías proporcionadas por el paquete de nuestro Arduino, ¿qué otros bloques son importantes dentro de la librería original de Simulink?
-Para trabajar con Arduino siempre son útiles bloques de operaciones matemáticas con el fin de relacionar las salidas y las entradas a través de operaciones. Además, 
-en la biblioteca “Sinks” podemos encontrar el bloque display para conocer los valores numéricos en cualquier momento y el bloque scope para hacer una representación gráfica de las señales.
+Para trabajar con Arduino siempre son útiles bloques de operaciones matemáticas con el fin de relacionar las salidas y las entradas a través de operaciones. 
+Además, en la biblioteca “Sinks” podemos encontrar el bloque display para conocer los valores numéricos en cualquier momento y el bloque scope 
+para hacer una representación gráfica de las señales.
 10)¿Qué bloque podemos usar dentro de Simulink para trabajar con los motores del Arduino Mega 2560?
 -Existen bloques específicos para motores servo dentro del Arduino que son aquellos que funcionan rotando. Generalmente para motores en el Arduino existen bloques PWM, 
-que sirve para controlar la cantidad de energía que recibe y regular su velocidad, temperatura, iluminación. En caso de motores servo dentro del Arduino, que son aquellos que funcionan rotando, 
-existén bloques específicos para ellos.
+que sirve para controlar la cantidad de energía que recibe y regular su velocidad, temperatura, iluminación. En caso de motores servo dentro del Arduino, 
+que son aquellos que funcionan rotando, existén bloques específicos para ellos.
 11)¿Qué debemos hacer para que Simulink reconozca la placa Arduino Mega 2560?
  -Para que simulink reconozca los componentes hay que señalar sus respectivos pins en el bloque correspondiente, además de conectarlo por cable al equipo.
 
