@@ -1,11 +1,13 @@
 1)¿En qué consiste simulink?
 Es un entorno de diagramas de bloque que modela, simula y analiza los sistemas dinámicos(lineales, no lineales, discretos, continuos…
 2)¿Cuáles son los preparativos que se necesitan hacer en Simulink para comenzar a trabajar con el Arduino Mega 2560?
-- Se necesita la instalación de un Add-on en Matlab pulsando en "Get Hardware Suport Packages", donde se obtendrán paquetes para Arduino desde internet. Para que se instalen correctamente los drivers se necesitara acceder con el modo administrador.
+- Se necesita la instalación de un Add-on en Matlab pulsando en "Get Hardware Suport Packages", donde se obtendrán paquetes para Arduino desde internet. 
+Para que se instalen correctamente los drivers se necesitara acceder con el modo administrador.
 3)¿Cómo se tendrá que configurar Simulink pera trabajar con la placa Arduino Mega 2560?
 -Para la configuración especifica de Simulink para funcionar con el Arduino, tenemos que ir a "MODELING", pulsar "Model Settings" e ir finalmente a "Hardware Implementation y seleccionar nuestro Arduino.
 4)¿Qué modos de ejecución hay?
-Podemos ejecutar nuestro modelo a través de una simulación en nuestro PC o con nuestro hardware con el modo “Connect to” el cual ejecuta el modelo en el PC y lo lleva al hardware, o “external” el modelo se lleva primeramente al hardware y allí se ejecuta.
+Podemos ejecutar nuestro modelo a través de una simulación en nuestro PC o con nuestro hardware con el modo “Connect to” el cual ejecuta el modelo en el PC y lo lleva al hardware, 
+o “external” el modelo se lleva primeramente al hardware y allí se ejecuta.
 5)¿Qué librerías nos proporciona el paquete de Simulink específico del Arduino Mega 2560?
 -Con todo instalado podremos usar diferentes bibliotecas con bloques especializados en motores, en sensores o en conversión de datos byte, pero se usa principalmente la biblioteca COMMON, 
 que proporciona bloques relacionados con los componentes de la placa.
